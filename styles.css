@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+/* primary colors */
+--violet: hsla(263, 55%, 52%, 0.6);
+--dark-grayish-blue: hsl(217, 19%, 35%);
+--profile-dark-grayish-blue: hsla(228, 11%, 82%, 90%);
+--text-dark-blackish-blue: hsla(228, 11%, 82%, 80%);
+--second-text-dark-blackish-blue: hsla(228, 5%, 62%, 0.9);
+--White: hsl(0, 0%, 100%);
+
+/* Neutral colors */
+
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+
+/* fonts section */
+
+--font-family: "Barlow Semi Condensed", sans-serif;
+
+--profile-font-weight: 500;
+--text-font-weight: 600;
+
+--profile-font-size: 13px;
+
+}
+
+body{
+    background-color: var(--Light-grayish-blue);
+
+}
+
+.container{
+   
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px; 
+     
+
+}
+
+.containers{
+    background-color: var(--violet);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+  margin: 20px;
+    justify-content: center;
+}
+
+ h2{
+
+    color: var(--White);
+    font-weight:var(--text-font-weight);
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+   font-weight: 500;
+
+    font-size: 1.5em;
+}
+
+.containers .Graduate{
+color: var(--profile-dark-grayish-blue);
+font-size: 1.4em;
+}
+
+.containers .paragraph1{
+color: var(--White);
+font-family: var(--font-family);
+font-weight: var(--text-font-weight);
+font-size: 1.7em;
+margin-bottom: 1.4rem;
+line-height: 1.4;
+}
+
+.containers .paragraph2{
+color: var(--text-dark-blackish-blue);
+line-height: 1.4;
+font-size: 1.5em;
+font-weight: 400;
+
+}
+
+.containers .profile{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2rem;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.Daniel{
+    margin-top: 5rem;
+    position: relative;
+}
+
+.Jonathan{
+    background-color: var(--dark-grayish-blue);
+}
+
+.Jeanette{
+    background-color: var(--White);
+
+}
+
+.Jeanette 
+ h2{
+    color: var(--dark-grayish-blue);
+}
+.Jeanette .paragraph1{ 
+color: var(--dark-grayish-blue);
+}
+.Jeanette .paragraph2{
+    color: var(--second-text-dark-blackish-blue);
+}
+
+.Jeanette .Graduate{
+    color: var(--second-text-dark-blackish-blue);
+}
+
+.Patrick{
+    background-color: hsl(215, 15%, 23%);
+}
+
+.Patrick .paragraph2{
+    color: var(--profile-dark-grayish-blue);
+}
+
+.Kira{
+background-color: var(--White);
+margin-bottom: 3rem;
+
+}
+
+
+.Kira h2{
+    color: var(--dark-grayish-blue);
+}
+.Kira .paragraph1{ 
+color: var(--dark-grayish-blue);
+}
+.Kira .paragraph2{
+    color: var(--second-text-dark-blackish-blue);
+}
+
+.Kira .Graduate{
+    color: var(--second-text-dark-blackish-blue);
+}
+
+.qoutation{
+
+    position: absolute;
+    right: 0;
+    opacity: 60%;
+    width: 150px;
+    top: 0;
+}
+
+
+@media(max-width:340px){
+
+    h2{
+        font-size: 1em; 
+    }
+
+    .containers .Graduate{
+    
+        font-size: 1em;
+        }
+
+}
+
+@media (min-width: 640px){
+.container{
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+
+}
+
+@media(min-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        max-width: 1200px;
+        margin: 50px auto; 
+    }
+
+    .Daniel{
+        grid-column: 1/3;
+    }
+
+    .Kira{
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+
+    .Patrick{
+        grid-column: 2/4;
+    }
+    
+    /* reducing fonts */
+
+    .containers{
+        padding: 20px;
+    }
+         
+    
+    
+    h2{
+        font-size: 1em; 
+    }
+
+    .Jonathan h2{
+        font-size: .8em;
+    }
+
+    .Jonathan .Graduate{
+        font-size: .8em;
+    }
+
+    .Jeanette h2, .Graduate{
+        font-size: .8em;
+
+    }
+
+
+
+.containers .Graduate{
+    font-size: 1em;
+    }
+
+    .containers .paragraph1{
+       
+        font-size: 1.2em;
+        margin-bottom: 1.2rem;
+        line-height: 1.1; 
+        }
+
+        .containers .paragraph2{
+             line-height: 1.1;
+            font-size: 1.2em;
+            
+            
+            }  
+    
+}
